@@ -8,6 +8,7 @@ const firebaseConfig = {
   authDomain: "development-5d13b.firebaseapp.com",
   projectId: "development-5d13b",
   storageBucket: "development-5d13b.appspot.com",
+  databaseURL: "https://development-5d13b-default-rtdb.asia-southeast1.firebasedatabase.app",
   messagingSenderId: "46930462088",
   appId: "1:46930462088:web:67379bc42c48089581a63d",
   measurementId: "G-0TM26LDWGK"

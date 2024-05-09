@@ -1,5 +1,7 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
+import { getDatabase } from "firebase/database";
+import { getFirestore } from "firebase/firestore";
 import { getMessaging, getToken } from "firebase/messaging";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
@@ -11,6 +13,7 @@ const firebaseConfig = {
   authDomain: "development-5d13b.firebaseapp.com",
   projectId: "development-5d13b",
   storageBucket: "development-5d13b.appspot.com",
+  databaseURL: "https://development-5d13b-default-rtdb.asia-southeast1.firebasedatabase.app",
   messagingSenderId: "46930462088",
   appId: "1:46930462088:web:67379bc42c48089581a63d",
   measurementId: "G-0TM26LDWGK"
@@ -20,6 +23,7 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 
 export const messaging = getMessaging(app);
+export const database = getDatabase(app);
 
 if ("serviceWorker" in navigator) {
   navigator.serviceWorker
