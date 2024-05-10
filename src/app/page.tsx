@@ -14,25 +14,6 @@ export default function Home() {
   fcmToken && console.log("FCM token:", fcmToken);
 
   const handlebutton = async () => {
-    // const response = await axios.post(
-    //   "https://fcm.googleapis.com/fcm/send",
-    //   {
-    //     to: fcmToken,
-    //     notification: {
-    //       title: "Test Notification",
-    //       body: "Test Notification Body",
-    //     },
-    //   },
-    //   {
-    //     headers: {
-    //       "Content-Type": "application/json",
-    //       Authorization: `key=AAAACu1GBYg:APA91bFNyRPiVWeiW3LLCAJ4DfIXsxpNQ9MAv_5rTIFJf3XnrYBvwuD2lqDABpXMpZ05bnkYI0vXpNcKD72h1S_-XbsTKawphTczVa2X2GYVdOG5aY80TMT50-UoqH9sn1PyxQaxVYHr`,
-    //     },
-    //   }
-    // );
-
-    // console.log(response);
-
     const productName = "New Product"; // Replace with input value
     const productDescription = "This is a new product"; // Replace with input value
 
